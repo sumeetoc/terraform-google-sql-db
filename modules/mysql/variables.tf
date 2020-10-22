@@ -79,6 +79,12 @@ variable "disk_autoresize" {
   default     = true
 }
 
+variable "deletion_protection" {
+  description = "Protect CloudSQL instance from deletion."
+  type        = bool
+  default     = true
+}
+
 variable "disk_size" {
   description = "The disk size for the master instance"
   type        = number
